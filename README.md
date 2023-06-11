@@ -14,6 +14,11 @@ npm run serve
 ```
 
 ## 프로젝트 규칙 및 구조
+- 작성 파일<br/>
+App.vue가 화면에 보이는 파일 기준으로 작성하고<br/>
+웬만하면 하위 폴더만 만들어서 작성하고 <br/>
+index.html 등의 기본 구조는 덜 손대는 쪽으로 작성<br/>
+
 - 폴더명<br/>
 소문자로 작성<br/>
 ex) public, src, images, components 등등<br/>
@@ -27,7 +32,41 @@ ex) LoginPage, LoginController, LoginModel <br/>
 카멜 케이스로 작성<br/>
 ex) int snakeCase;<br/>
 
-- 형상관리 규칙
+- 태그명<br/>
+일반적으로 가능하면 header, footer, section 등의 시멘틱 태그 권장<br/>
+추가적으로 가능하면 figure, figcaption 등 이미지와 글씨를 담을 수 있는 태그를 권장하나 필수는 아님<br/><br/>
+
+- 클래스명<br/>
+기본적으로 클래스명은 각 영역의 이름을 떠오르게 적는 것을 권장.<br/>
+BEM (Block Element Modifier) 규칙을 사용<br/>
+ex) 요소__일부분 Underscore(Lodash) 기호로 요소의 일부분을 표시<br/>
+ex) 요소--상태 Hyphen(Dash) 기호로 요소의 상태를 표시<br/>
+
+- CSS<br/>
+SASS (SCSS)를 사용 예정<br/>
+```
+npm install -D sass
+```
+main.js에 입력<br/>
+```
+import { createApp } from "vue";
+import App from "./App.vue";
+
+// import './assets/main.css' 원래 이게 적용되어있어서 주석처리
+import "./assets/scss/common.scss";
+createApp(App).mount("#app");
+```
+
+- FONT<br/>
+폰트는 상의 후에 결정 가능<br/>
+기본 폰트는 현재 Roboto, Noto Sans Korean, Sans-serif로 구성하였음<br/><br/>
+
+- meta 태그 (SEO)<br/>
+오픈 그래프와, 트위터 카드는 수정이 필요<br/>
+애플 사이트 기준으로 등록해두었음 추후 수정 필요.<br/>
+
+
+- 형상관리 규칙<br/>
 기본적인 브랜치는 dev에서 branch를 새로 따와서 기능별/페이지 별로 작성하면 됩니다.   <br/>
 dev에 추후 머지하는 것으로 하고 작성 완료 후 dev나 main 브랜치를 활용하여 배포 예정입니다.<br/>
 로직 : dev - 새 브렌치 - dev에 머지<br/>
