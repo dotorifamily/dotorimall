@@ -32,6 +32,14 @@ ex) LoginPage, LoginController, LoginModel <br/>
 카멜 케이스로 작성<br/>
 ex) int snakeCase;<br/>
 
+- 자료형
+TypeScript를 쓸 경우 각 타입에 맞게 작성,
+TypeSCript 없이 사용할 경우 -> 
+재할당이 필요 : let
+재할당이 불필요 : const 등을 사용하고
+var는 지양하는 것을 권장드립니다.
+<a href="https://tndvjd.github.io/var-let-const-diff/" alt="var사용 지양하는 까닭">var를 지양하는 까닭 링크</a>
+
 - 태그명<br/>
 일반적으로 가능하면 header, footer, section 등의 시멘틱 태그 권장<br/>
 추가적으로 가능하면 figure, figcaption 등 이미지와 글씨를 담을 수 있는 태그를 권장하나 필수는 아님<br/><br/>
@@ -72,7 +80,7 @@ dev에 추후 머지하는 것으로 하고 작성 완료 후 dev나 main 브랜
 로직 : dev - 새 브렌치 - dev에 머지<br/>
 브랜치 : feature/lkj(영문이름)/작성 내용<br/>
 커밋 규칙 : git commit -m "이름 - 추가된 내용 혹은 기능" 으로 작성하면 됩니다.<br/>
-기능 단위 혹은 페이지 단위로 커밋하시면 관리하기 편하실 것 입니다.<br/>
+기능 단위 혹은 페이지 단위로 커밋하시면 관리하기 편하실 것 입니다.<br/><br/>
 
 - 프로젝트 구조<br/>
 소스파일의 경우<br/>
@@ -81,7 +89,7 @@ src/components/ : 모듈화 해서 컴포넌트화 된 내용을 넣어서 사�
  ex) Header.vue, Footer.vue, 기타 Template<br/>
 src/pages/ : View단의 화면 Pages들을 작성 합니다. ex) LoginPage.vue, ProductsPage.vue, Cart.vue<br/>
 src/controller : 컨트롤러 페이지를 작성합니다. ex) LoginController.vue<br/>
-src/model : 모델 페이지를 작성합니다. ex) LoginModel.vue<br/>
+src/model : 모델 페이지를 작성합니다. ex) LoginModel.vue<br/><br/>
 
 - 이미지 파일의 경우<br/>
 assets 폴더에서 새로운 폴더를 만들어서 담아서 사용합니다.<br/>
