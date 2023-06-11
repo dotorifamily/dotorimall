@@ -16,7 +16,7 @@ npm run serve
 ## 프로젝트 규칙 및 구조
 - 폴더명<br/>
 소문자로 작성<br/>
-ex_ public, src, images, components 등등<br/>
+ex) public, src, images, components 등등<br/>
 
 - 파일명<br/>
 파스칼 케이스로 작성해주시고,<br/>
@@ -38,7 +38,8 @@ dev에 추후 머지하는 것으로 하고 작성 완료 후 dev나 main 브랜
 - 프로젝트 구조<br/>
 소스파일의 경우<br/>
 src 내부에 폴더를 만들어서 사용.<br/>
-src/components/ : 모듈화 해서 컴포넌트화 된 내용을 넣어서 사용. ex) Header.vue, Footer.vue, 기타 Template<br/>
+src/components/ : 모듈화 해서 컴포넌트화 된 내용을 넣어서 사용합니다. 현재는 페이지가 많지않으니 하나의 components에 모아서 사용하고, 추후 페이지가 많아지면 각 작업별 components 폴더를 만들면 될 것 같습니다.
+ ex) Header.vue, Footer.vue, 기타 Template<br/>
 src/pages/ : View단의 화면 Pages들을 작성 합니다. ex) LoginPage.vue, ProductsPage.vue, Cart.vue<br/>
 src/controller : 컨트롤러 페이지를 작성합니다. ex) LoginController.vue<br/>
 src/model : 모델 페이지를 작성합니다. ex) LoginModel.vue<br/>
@@ -53,7 +54,7 @@ aseets/cart/<br/>
 etc...<br/>
 
 - Router, 상태관리 등 기본적으로 있는 js 파일 등에서 추가해서 사용<br/>
-ex) main.js / router.js 등등<br/><br/>
+ex) main.js / index.js 등등<br/><br/>
 
 - 기타 추가로 필요한 영역이 있으면 폴더 작성 후 MVC패턴 기반으로 만들어서 나아가면 됩니다.<br/>
 Typescript파일의 경우 기존 .vue 파일이 있는 곳에 추가로 작성되게 작업하시면 됩니다.<br/>
