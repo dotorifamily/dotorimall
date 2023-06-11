@@ -47,8 +47,10 @@ var는 지양하는 것을 권장드립니다.
 - 클래스명<br/>
 기본적으로 클래스명은 각 영역의 이름을 떠오르게 적는 것을 권장.<br/>
 BEM (Block Element Modifier) 규칙을 사용<br/>
-ex) 요소__일부분 Underscore(Lodash) 기호로 요소의 일부분을 표시<br/>
-ex) 요소--상태 Hyphen(Dash) 기호로 요소의 상태를 표시<br/>
+-> 요소__일부분 Underscore(Lodash) 기호로 요소의 일부분을 표시<br/>
+ex)item__title, item__description<br/><br/>
+-> 요소--상태 Hyphen(Dash) 기호로 요소의 상태를 표시<br/>
+ex) btn--gold, btn--white, .icon--chip, icon--display 등등 <br/><br/>
 
 - CSS<br/>
 SASS (SCSS)를 사용 예정<br/>
