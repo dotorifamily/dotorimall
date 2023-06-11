@@ -1,4 +1,4 @@
-#dotorimall v0.0.0 (23.06.11 이경진 작성)
+# dotorimall v0.0 (23.06.11 이경진 작성)
 도토리패밀리 쇼핑몰 입니다. 
 
 ## 프로젝트 환경 설정
@@ -70,12 +70,22 @@ npm install pinia
 ```
 
 - 기타<br/>
-Vue Router, TypeScript를 추가 예정
+Vue Router, TypeScript, nodemon를 추가 예정
 ```
 npm i vue-router@next --save
 ```
 ```
 vue add typescript
 ```
+```
+npm install -g nodemon
 
+// nodemon --watch src/ src/index.js
+// packages.json - 하단
+//  "scripts":{
+//   "start": "node src",
+//    "start:dev": "nodemon --watch src/ src/index.js"
+//  }
+
+```
 
