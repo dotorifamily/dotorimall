@@ -6,7 +6,7 @@
 </template>
   
   <script setup lang="ts">
-  import { useCounterStore } from "./stores/list";
+  import { useCounterStore } from "./stores/counter";
   import { storeToRefs } from "pinia";
   
   
@@ -66,11 +66,15 @@ class Person { // eslint-disable-line no-unused-vars
   </script>
 
   <style lang="scss">
+  // @import "@/assets/scss/_ddd.scss";
+  $bgColor : #232323;
+
   .about {
     display:block;
-    // & __aby{
-
-    // }
+    color:$bgColor;
+    & __test{ 
+      color:$bgColor;
+    }
 
   }
 </style>

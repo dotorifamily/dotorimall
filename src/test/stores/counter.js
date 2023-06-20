@@ -4,6 +4,7 @@
 // 예: `useUserStore`, `useCartStore`, `useProductStore`
 // 첫 번째 인자는 앱 전체에서 스토어의 고유 ID입니다.
 //composition API
+//https://ryuhojin.tistory.com/17
 import { defineStore } from "pinia";
 import { ref, computed } from "vue";
 
