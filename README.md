@@ -30,7 +30,7 @@ ex) LoginPage, LoginController, LoginModel <br/>
 
 - 변수명 (작업시)<br/>
 카멜 케이스로 작성<br/>
-ex) int snakeCase;<br/>
+ex) int camelCase;<br/>
 
 - 자료형
 TypeScript를 쓸 경우 각 타입에 맞게 작성,
