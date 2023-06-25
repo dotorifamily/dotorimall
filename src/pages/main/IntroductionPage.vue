@@ -6,7 +6,7 @@
               <p class="product__desc">상품 소개하는 내용</p>
               <ul class="item">
                 <li>
-                    <img class="item__img" src="" alt-=""/>
+                    <img class="item__img" src="" alt=""/>
                     <div class="item__desc">                        
                         <span class="item__desc__title">상품제목</span>
                         <span class="item__desc__price">32,700원</span>
@@ -14,7 +14,7 @@
 
                 </li>
                 <li>
-                    <img class="item__img" src="" alt-=""/>
+                    <img class="item__img" src="" alt=""/>
                     <div class="item__desc">                        
                         <span class="item__desc__title">상품제목</span>
                         <span class="item__desc__price">32,700원</span>
@@ -22,7 +22,7 @@
 
                 </li>
                 <li>
-                    <img class="item__img" src="" alt-=""/>
+                    <img class="item__img" src="" alt=""/>
                     <div class="item__desc">                        
                         <span class="item__desc__title">상품제목</span>
                         <span class="item__desc__price">32,700원</span>
@@ -30,7 +30,7 @@
 
                 </li>
                 <li>
-                    <img class="item__img" src="" alt-=""/>
+                    <img class="item__img" src="" alt=""/>
                     <div class="item__desc">                        
                         <span class="item__desc__title">상품제목</span>
                         <span class="item__desc__price">32,700원</span>
@@ -38,7 +38,7 @@
 
                 </li>
                 <li>
-                    <img class="item__img" src="" alt-=""/>
+                    <img class="item__img" src="" alt=""/>
                     <div class="item__desc">                        
                         <span class="item__desc__title">상품제목</span>
                         <span class="item__desc__price">32,700원</span>
@@ -46,7 +46,7 @@
 
                 </li>
                 <li>
-                    <img class="item__img" src="" alt-=""/>
+                    <img class="item__img" src="" alt=""/>
                     <div class="item__desc">                        
                         <span class="item__desc__title">상품제목</span>
                         <span class="item__desc__price">32,700원</span>
@@ -86,38 +86,29 @@
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped lang="scss">
     .introduction{
-
-        .inner {
-        
+        .inner {        
         width:1200px;
         height: 910px;
         margin:0 auto;
         display:flex;
         justify-content: center;
-        align-items: center;
-        background-color: skyblue;
-
-        
+        background-color: skyblue;        
         }
         .product {
-           
-
-            & __title {
-                font-size:18px;
+            &__title {
+                margin-top:30px;
+                font-size:20px;
+                font-weight: 600;
             }
-            & __desc{
+            &__desc{
                 margin-top:30px;
             }
-
-            .item{
-                
-                padding:10px 90px;
+            .item {
+                padding: 10px 90px;
                 display:flex;
                 justify-content: space-around;
                 align-items: center;
-                // align-content: center;
                 flex-wrap: wrap;
-                // position: relative;
                 li {
                     margin-top:20px;
                     margin-right: 10px;
