@@ -35,15 +35,18 @@ export default {
     $bgColor : #ff6b00;
 .header {
     background-color:$bgColor;
-   
-    .inner {
 
+    .inner {
         
         width:1200px;
         height: 100px;
         margin:0 auto;
         display:flex;
         justify-content: space-between;
+        
+        .menu {
+            display:flex;
+        }
     }
 }
 
