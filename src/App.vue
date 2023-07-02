@@ -8,7 +8,7 @@
 // import { Options, Vue } from 'vue-class-component';
 import Header from './components/HeaderPage.vue';
 import Search from './pages/main/SearchPage.vue';
-import Introduction from './pages/main/IntroductionPage.vue'
+import Introduction from './pages/main/IntroductionPage.vue';
 
 export default {
   name : 'App',

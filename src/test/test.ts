@@ -610,10 +610,10 @@
 // 제네릭 (Generic)
 /// 함수
 
-interface Obj {
-    x: number
-}
-type Arr = [number, number];
+// interface Obj {
+//     x: number
+// }
+// type Arr = [number, number];
 
 // 기존 오버로딩 방식
 // function toArray(a: string, b:string) : string[]
