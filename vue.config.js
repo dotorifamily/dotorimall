@@ -1,17 +1,19 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
-  css : {
-    loaderOptions : {
+  css: {
+    loaderOptions: {
       sass: {
-        additionalData : `
+        additionalData: `
           
-        `
-      }
-    }
+        `,
+      },
+    },
   },
   transpileDependencies: true,
-  lintOnSave : false,
-  
-})
-
-
+  lintOnSave: false,
+  // options...
+  devServer: {
+    // disableHostCheck: true,
+    allowedHosts: "all",  //dev환경에서 모든 host(도메인)을 허용한다.
+  },
+});
