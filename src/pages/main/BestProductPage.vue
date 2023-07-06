@@ -1,7 +1,7 @@
 <template>
-    <section class="event">
+    <section class="bestproduct">
         <div class="inner">
-            <div class="event-list-area">
+            <div class="bestproduct-list-area">
                 
                 <swiper
                     class="swiper"
@@ -13,10 +13,10 @@
                     @swiper="onSwiper"
                     @slideChange="onSlideChange"
                 >
-                    <swiper-slide><h2>이벤트리스트1</h2></swiper-slide>
-                    <swiper-slide><h2>이벤트리스트2</h2></swiper-slide>
-                    <swiper-slide><h2>이벤트리스트3</h2></swiper-slide>
-                    <swiper-slide><h2>이벤트리스트4</h2></swiper-slide>
+                    <swiper-slide><h2>대표상품 1</h2></swiper-slide>
+                    <swiper-slide><h2>대표상품 2</h2></swiper-slide>
+                    <swiper-slide><h2>대표상품 3</h2></swiper-slide>
+                    <swiper-slide><h2>대표상품 4</h2></swiper-slide>
                     ...
                 </swiper>
                 
@@ -38,7 +38,7 @@
   import 'swiper/css/scrollbar';
 
   export default {
-    name: "EVENT",
+    name: "BESTPRODUCT",
     components: {
         Swiper,
         SwiperSlide,
@@ -63,7 +63,7 @@
   </script>
   
   <style scoped lang="scss">
-    .event{
+    .bestproduct {
 
         .inner {
         
@@ -79,7 +79,7 @@
             .swiper{
                 width: 1032px;
                 height: 650px;
-                background-color: sandybrown;
+                background-color: mediumaquamarine;
                 margin:0 auto;
             }
         }

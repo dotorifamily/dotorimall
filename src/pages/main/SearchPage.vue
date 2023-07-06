@@ -15,8 +15,8 @@
   <script lang="ts">
   //https://kyounghwan01.github.io/Vue/vue3/composition-api/#ref-reactive-%EC%B0%A8%EC%9D%B4
   export default {
-      name: "SEARCH",
-     setup() {
+    name: "SEARCH",
+    setup() {
       // let aa = 'dd';
      }
   }

@@ -1,8 +1,9 @@
 <template>
   <Header />
   <Search />
-  <Introduction />
   <Event />
+  <Introduction />
+  <BestProduct />
   <Footer />
 </template>
 
@@ -10,24 +11,20 @@
 // import { Options, Vue } from 'vue-class-component';
 import Header from './components/HeaderPage.vue';
 import Search from './pages/main/SearchPage.vue';
-import Introduction from './pages/main/IntroductionPage.vue'
-import Event from './pages/main/eventPage.vue'
+import Event from './pages/main/EventPage.vue';
+import Introduction from './pages/main/IntroductionPage.vue';
+import BestProduct from './pages/main/BestProductPage.vue';
 import Footer from './components/FooterPage.vue';
 
 export default {
   name : 'App',
-  components: {  Header,  Search, Introduction, Event, Footer },
+  components: {  Header,  Search,  Event, Introduction, BestProduct, Footer },
 
   setup(){
 
   }
 }
-// @Options({
 
-// })
-// export default class App extends Vue {
-
-// }
 </script>
 
 <style lang="scss">
