@@ -19,7 +19,7 @@
                     </div>
                 </li> 
             </ul>
-            <p>
+            <p class="">
                 <button class="all">전체 선택</button><button class="cancel">선택 삭제</button>
             </p>
 
@@ -38,7 +38,7 @@
                 </li>
             </ul>
 
-            <p>
+            <p class="">
                 <button class="order">전체 상품 주문</button> <button>선택 상품 주문</button>
             </p>
 
