@@ -1,7 +1,7 @@
 <template>
   <Header />
-  <Search />
   <Event />
+  <Search />  
   <Introduction />
   <BestProduct />
   <Footer />

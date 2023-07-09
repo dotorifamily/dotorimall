@@ -23,7 +23,7 @@ class ExampleRepository {
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: API_URL,
+      baseURL: 'localhost:3000',
       headers: {
         'Content-Type': 'application/json',
       },

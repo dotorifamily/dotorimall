@@ -7,6 +7,10 @@
             <p class="cs">고객센터</p>
         </div>
     </div>
+    <div class="side-menu">
+        <p class="mypage"><a href="./" title="mypage"><img src="../assets/images//commons/mypage.png" alt="mypage" /></a></p>
+        <p class="cart"><a href="/" title="cart"><img src="../assets/images/commons/cart.png" alt="cart" /></a></p>
+    </div>
   </header>
 </template>
 
@@ -18,16 +22,7 @@ export default {
     // let aa = 'dd';
    }
 }
-// import { Options, Vue } from 'vue-class-component';
 
-// @Options({
-//   props: {
-//     msg: String
-//   }
-// })
-// export default class HelloWorld extends Vue {
-//   msg!: string
-// }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -35,18 +30,39 @@ export default {
     $bgColor : #ff6b00;
 .header {
     background-color:$bgColor;
-
+    height:100px;
+    display:flex;
+    align-items: center;
     .inner {
         
         width:1200px;
-        height: 100px;
+        // height: 100px;
         margin:0 auto;
         display:flex;
         justify-content: space-between;
+        align-items: center;
         
         .menu {
             display:flex;
+            
         }
+    }
+
+    .side-menu{
+        position:absolute;
+        right:60px;
+        top:32px;
+        display:flex;
+
+        p {
+            width:36px;
+            height:36px;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+       
     }
 }
 

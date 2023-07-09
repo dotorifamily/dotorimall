@@ -65,10 +65,30 @@
   
   <script lang="ts">
   //https://kyounghwan01.github.io/Vue/vue3/composition-api/#ref-reactive-%EC%B0%A8%EC%9D%B4
+//   import axios from '../../api/axios';
+// import axios from '../../../ts/repository/axios'
+import axios from 'axios';
+
   export default {
       name: "INTRODUCTION",
-     setup() {
-      // let aa = 'dd';
+      setup  ()   {
+        
+        async function fetchData () {
+            try {
+                // const instance = axios.create({
+                //     baseURL: `http://localhost:3000` // 기본 URL을 설정합니다.
+                // });
+                const response = await axios.get(`http://localhost:3000`);
+                //   console.log("response data", response.data);
+                console.log("response", response);
+            } catch(error){
+                console.error(error);
+            }
+           
+        }
+        fetchData();
+        
+      
      }
   }
   // import { Options, Vue } from 'vue-class-component';
