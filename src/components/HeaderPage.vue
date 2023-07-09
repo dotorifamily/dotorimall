@@ -3,8 +3,12 @@
     <div class="inner">
         <h1 class="logo">DOTORI JAMBO</h1>
         <div class="menu">
-            <p class="product">상품</p>
-            <p class="cs">고객센터</p>
+            <p class="product">
+                <router-link to="/production">상품<font-awesome-icon icon="fa-chevron-down"></font-awesome-icon></router-link>
+            </p>
+            <p class="cs">
+                <router-link to="/cs">고객센터</router-link>
+            </p>
         </div>
     </div>
     <div class="side-menu">
@@ -44,6 +48,8 @@ export default {
         
         .menu {
             display:flex;
+            gap:40px;
+            margin-right:50px;
             
         }
     }
@@ -53,6 +59,7 @@ export default {
         right:60px;
         top:32px;
         display:flex;
+        gap:30px;
 
         p {
             width:36px;
