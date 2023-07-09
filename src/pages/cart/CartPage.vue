@@ -39,7 +39,7 @@
             </ul>
 
             <p class="">
-                <button class="order">전체 상품 주문</button> <button>선택 상품 주문</button>
+                <button class="all-order">전체 상품 주문</button> <button class="check-order">선택 상품 주문</button>
             </p>
 
 
